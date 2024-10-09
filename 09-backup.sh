@@ -29,7 +29,7 @@ then
     echo "$DEST_DIR does not exist...Please check"
 fi
 
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +$days)
 
 if [ -n $files ]
 then
